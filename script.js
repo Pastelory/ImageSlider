@@ -1,6 +1,6 @@
 const nextBtn = documemt.querySelector('.nextBtn');
 const prevBtn = document.querySelector('.prevBtn');
-const container = document.querySelector('image');
+const container = document.querySelector('.image');
 
 let counter = 0;
 
@@ -9,20 +9,20 @@ prevBtn.addEventListener('click',prevSlide);
 
 function nextSlide(){
     container.animate([{opacity:'0.1'},{opacity:'1.0'}],{duration:1000,fill:'forwards'});
-    if(counter === 4){
+    if(counter === 3){
         counter = -1;
     }
     counter++;
 
-    container.style.backgroundImage = `url(image/image-${counter}.jpeg)`
+    container.style.backgroundImage = `url(image/image${counter}.jpeg)`
 }
 
 function prevSlide(){
     container.animate([{opacity:'0.1'},{opacity:'1.0'}],{duration:1000,fill:'forwards'});
     if(counter === 0){
-        counter = 5;
+        counter = 4;
     }
     counter--;
 
-    container.style.backgroundImage = url(`url(image/image-${counter}.jpeg)`)
+    container.style.backgroundImage = url(`url(image/image${counter}.jpeg)`)
 }
