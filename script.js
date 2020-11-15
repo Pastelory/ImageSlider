@@ -1,4 +1,4 @@
-const nextBtn = docunemt.querySelector('.nextBtn');
+const nextBtn = documemt.querySelector('.nextBtn');
 const prevBtn = document.querySelector('.prevBtn');
 const container = document.querySelector('image');
 
@@ -14,7 +14,7 @@ function nextSlide(){
     }
     counter++;
 
-    container.style.backgroundImage = url('https://i.pinimg.com/originals/fb/0a/9b/fb0a9b04b3cc0f8b83a94e772253a110.jpg')
+    container.style.backgroundImage = `url(img/bcg-${counter}.jpeg)`
 }
 
 function prevSlide(){
@@ -24,5 +24,5 @@ function prevSlide(){
     }
     counter--;
 
-    container.style.backgroundImage = url('https://i.pinimg.com/originals/fb/0a/9b/fb0a9b04b3cc0f8b83a94e772253a110.jpg')
+    container.style.backgroundImage = url(`url(img/bcg-${counter}.jpeg)`)
 }
