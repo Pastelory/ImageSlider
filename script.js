@@ -14,7 +14,7 @@ function nextSlide(){
     }
     counter++;
 
-    container.style.backgroundImage = `url(image/image${counter}.jpeg)`
+    container.style.backgroundImage = `url(image/image${counter}.jpg)`
 }
 
 function prevSlide(){
@@ -24,5 +24,5 @@ function prevSlide(){
     }
     counter--;
 
-    container.style.backgroundImage = url(`url(image/image${counter}.jpeg)`)
+    container.style.backgroundImage = url(`url(image/image${counter}.jpg)`)
 }
